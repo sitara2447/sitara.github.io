@@ -1,0 +1,199 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aesthetic Resume</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* BODY BACKGROUND */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+}
+
+/* MAIN CARD (GLASS EFFECT) */
+.resume {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    position: relative;
+}
+
+/* PROFILE WRAPPER */
+.profile-box {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    margin: auto;
+}
+
+/* BLUR BACKGROUND CIRCLE */
+.profile-box::before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    border-radius: 50%;
+    top: -10px;
+    left: -10px;
+    filter: blur(20px);
+    z-index: 0;
+}
+
+/* PROFILE IMAGE */
+.profile-box img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+    border: 3px black;
+}
+
+/* NAME */
+.header h1 {
+    margin: 10px 0 5px;
+    color: #444;
+}
+
+/* TITLE */
+.header p {
+    color: #888;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    margin-top: 10px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* SECTION */
+.section {
+    margin-top: 25px;
+}
+
+/* SECTION TITLE */
+.section h2 {
+    color: #a18cd1;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* TEXT */
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: #fbc2eb;
+    color: #444;
+    padding: 6px 14px;
+    margin: 6px;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.skills span:hover {
+    background: #a6c1ee;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* FADE ANIMATION */
+.resume {
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="profile-box">
+            <img src=https://images.unsplash.com/photo-1607746882042-944635dfe10e">
+        </div>
+        <h1>Naintara</h1>
+        <p>Frontend Developer</p>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact">
+        Email: sitarachishti@gmail.com| Phone: 03490077313 | Pakistan
+    </div>
+
+    <!-- ABOUT -->
+    <div class="section">
+        <h2>About Me</h2>
+        <p>I am a creative web developer who loves designing aesthetic and modern websites with clean UI and smooth user experience.</p>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>GitHub</span>
+        </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+        <h2>Education</h2>
+        <p><strong>BS computer science </strong><br>
+        UOS (2022 - 2026)</p>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+        <h2>Experience</h2>
+        <p><strong>Intern - LumiSoft Studio</strong><br>
+        2025 - Worked on UI design and frontend development.</p>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+        <h2>Projects</h2>
+        <p>• Portfolio Website<br>
+           • Resume Website<br>
+           • Landing Page Design</p>
+    </div>
+
+</div>
+
+</body>
+      </html>
